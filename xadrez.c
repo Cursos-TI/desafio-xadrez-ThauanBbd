@@ -19,6 +19,7 @@ int main () {
     }
         
         }
+
          int i3, i4;
     //i3 representa o número de casas
     printf("Digite o número de casa que o bispo deve andar:\n");
@@ -39,7 +40,7 @@ int main () {
             }
 
         }
-int i5, i6;
+         int i5, i6;
     //i5 representa o número de casas que a torre deve andar para a direita
     //i6 representa o número de casa que a torre deve andar para a esquerda
     do{
@@ -56,10 +57,29 @@ int i5, i6;
     
     }while(i6 >= 8);{
         printf("Você andou %d casa à esquerda.\n", i6);
-        printf("Digite 0 se deseja encerrar.\n");
+        printf("Digite 0 para mover o cavalo\n");
         scanf("%d", &i6);
     }
-    printf("Jogo encerrado!\n");
+
+    int direcao = 1; //para cima ou para baixo
+    int lado = 0;
+    char caminho[50], caminho2[50];
+
+    printf("Digite o caminho, para cima ou para baixo:\n", caminho);
+    scanf("%s", &caminho);
+
+    printf("Digite o lado para onde deseja mover.\n", &caminho2);
+           scanf("%s", &caminho2);
+
+            while(direcao--){
+
+                for(lado; lado < 2; lado++){
+                    
+                    printf("%s\n", caminho);
+                }
+                printf("%s\n", caminho2);
+            }
 
 
 return 0;
+    } 
